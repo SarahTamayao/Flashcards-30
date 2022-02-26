@@ -5,7 +5,6 @@
 ## Lab 1
 
 ### App Description
-`TODO://` Add app description
 This is an app that allows the user to click a flashcard to show the answer to the question shown
 
 ### App Walk-though

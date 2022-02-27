@@ -5,7 +5,7 @@
 ## Lab 1
 
 ### App Description
-This is an app that allows the user to click a flashcard to show the answer to the question shown
+This is an app that allows the user to click a flashcard to show the answer to the question shown or to go back to the question
 
 ### App Walk-though
 

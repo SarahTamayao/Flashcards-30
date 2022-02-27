@@ -9,7 +9,7 @@ This is an app that allows the user to click a flashcard to show the answer to t
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/a8AOzAWkU9.gif" width=200><br>
+<img src="http://g.recordit.co/L9Y8SchOjY.gif" width=200><br>
 
 
 ## Required
@@ -19,6 +19,6 @@ This is an app that allows the user to click a flashcard to show the answer to t
 - [x] Build in logic to show the answer side when the card is tapped
 - [x] Push code to GitHub
 ## Optional
-- [ ] Toggle the flashcard between the question side and the answer side
+- [x] Toggle the flashcard between the question side and the answer side
 - [ ] Style the question and answer side of the card to better distinguish between the two sides
 - [ ] Add selectable multiple choice answers beneath the card

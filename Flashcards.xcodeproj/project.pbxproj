@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B793ACB027DE25AA001DCE10 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B793ACAF27DE25AA001DCE10 /* CreationViewController.swift */; };
 		B7C79F5D27CAB01200B5041F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C79F5C27CAB01200B5041F /* AppDelegate.swift */; };
 		B7C79F5F27CAB01200B5041F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C79F5E27CAB01200B5041F /* SceneDelegate.swift */; };
 		B7C79F6127CAB01200B5041F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C79F6027CAB01200B5041F /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B793ACAF27DE25AA001DCE10 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		B7C79F5927CAB01200B5041F /* Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C79F5C27CAB01200B5041F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7C79F5E27CAB01200B5041F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				B7C79F5E27CAB01200B5041F /* SceneDelegate.swift */,
 				B7C79F6027CAB01200B5041F /* ViewController.swift */,
 				B7C79F6227CAB01200B5041F /* Main.storyboard */,
+				B793ACAF27DE25AA001DCE10 /* CreationViewController.swift */,
 				B7C79F6527CAB01400B5041F /* Assets.xcassets */,
 				B7C79F6727CAB01400B5041F /* LaunchScreen.storyboard */,
 				B7C79F6A27CAB01400B5041F /* Info.plist */,
@@ -261,6 +264,7 @@
 				B7C79F6127CAB01200B5041F /* ViewController.swift in Sources */,
 				B7C79F5D27CAB01200B5041F /* AppDelegate.swift in Sources */,
 				B7C79F5F27CAB01200B5041F /* SceneDelegate.swift in Sources */,
+				B793ACB027DE25AA001DCE10 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

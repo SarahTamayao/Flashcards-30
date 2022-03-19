@@ -5,7 +5,7 @@
 ## Lab 3
 
 ### App Description
-This is an app that allows the user to create their own flashcard and click on it to toggle between the question and the answer of it and allows them to save and review multiple flashcards that they created
+This is an app that allows the user to create their own flashcard and click on it to toggle between the question and the answer of it and allows them to save and review multiple flashcards that they created and delete them
 
 ### App Walk-though
 

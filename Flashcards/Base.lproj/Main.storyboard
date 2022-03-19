@@ -52,13 +52,40 @@
                                     <segue destination="52L-wr-BlS" kind="presentation" id="3Jk-Nh-4Sl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5b-96-3hj">
+                                <rect key="frame" x="336" y="693" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="didTapOnNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Rh-MY-7se"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjz-cx-AFY">
+                                <rect key="frame" x="39" y="668" width="59" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Previous"/>
+                                <connections>
+                                    <action selector="didTapOnPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cVf-yH-Qkl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJX-cb-WdV">
+                                <rect key="frame" x="150" y="556" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete Flashcard"/>
+                                <connections>
+                                    <action selector="didTapOnDel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jU5-MZ-sAZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="backLabel" destination="0c3-4j-1do" id="X6y-eV-uUV"/>
+                        <outlet property="delButton" destination="AJX-cb-WdV" id="CUv-J9-5N3"/>
                         <outlet property="frontLabel" destination="bWm-Fa-r4o" id="xye-cy-i8j"/>
+                        <outlet property="nextButton" destination="J5b-96-3hj" id="Crd-5q-LLr"/>
+                        <outlet property="prevButton" destination="Xjz-cx-AFY" id="WvN-J6-t2J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

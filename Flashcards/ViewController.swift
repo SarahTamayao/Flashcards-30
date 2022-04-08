@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var prevButton: UIButton!
     @IBOutlet weak var delButton: UIButton!
+    @IBOutlet weak var card: UIView!
     
     var flashcards = [Flashcard]()
     var currentIndex = 0
@@ -37,20 +38,27 @@ class ViewController: UIViewController {
     
     }
     @IBAction func didTapOnFlashcard(_ sender: Any) {
-        if frontLabel.isHidden == true{
-            frontLabel.isHidden = false
-        }
-        else{
-            frontLabel.isHidden = true
-        }
+        flipFlashcard()
     }
-    
+    func flipFlashcard(){
+        UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight) {
+            if self.frontLabel.isHidden == true{
+                self.frontLabel.isHidden = false
+            }
+            else{
+                self.frontLabel.isHidden = true
+            }
+        }
+
+    }
     @IBAction func didTapOnNext(_ sender: Any) {
         currentIndex = currentIndex + 1
         
         updateLabels()
         
         updateButtons()
+        
+        animateCardOutNext()
     }
     
     @IBAction func didTapOnPrev(_ sender: Any) {
@@ -59,6 +67,8 @@ class ViewController: UIViewController {
         updateLabels()
         
         updateButtons()
+        
+        animateCardOutPrev()
     }
     @IBAction func didTapOnDel(_ sender: Any) {
         flashcards.remove(at: currentIndex)
@@ -66,13 +76,46 @@ class ViewController: UIViewController {
             currentIndex = currentIndex - 1
         }
         
-        updateLabels()
-        
         updateButtons()
         
         saveAllFlashcardsToDisk()
     }
-    
+    func animateCardOutNext(){
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        } completion: { finished in
+            
+            self.updateLabels()
+            
+            self.animateCardInNext()
+        }
+
+    }
+    func animateCardInNext(){
+        card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity
+        }
+    }
+    func animateCardOutPrev(){
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        } completion: { finished in
+            
+            self.updateLabels()
+            
+            self.animateCardInPrev()
+        }
+
+    }
+    func animateCardInPrev(){
+        card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        
+        UIView.animate(withDuration: 0.3) {
+            self.card.transform = CGAffineTransform.identity
+        }
+    }
     func updateFlashcard(question: String, answer: String) {
         let flashcard = Flashcard(question: question, answer: answer)
 

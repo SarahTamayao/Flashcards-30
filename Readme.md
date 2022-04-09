@@ -10,7 +10,7 @@ This is an app that allows the user to create their own flashcard and click on i
 
 ### App Walk-though
 
-<img src="http://g.recordit.co/BAP2rRZi80.gif" width=200><br>
+<img src="http://g.recordit.co/w9x3FZPHcy.gif" width=200><br>
 
 ## Required
 - [x] User should see the app icon 
